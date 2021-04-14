@@ -1,0 +1,20 @@
+version: 2.1
+orbs:
+  accelq-connect: accelq/accelq-connect@1.0.0
+jobs:
+  testjob:
+    docker:
+      - image: "cimg/node:lts"
+    steps:
+      - accelq-connect/accelq-ci:
+          agent-name: "POC_Agent"
+          job-id: " 346692"
+          password: "Q2hhbmdlTWUx"
+          project-name: "Custom Field Project"
+          tenant: "demo"
+          url: "https://poc.accelq.io"
+          user: "aut2@mailnesia.com"
+workflows:
+    integration-test_deploy:
+      jobs:
+        - testjob
