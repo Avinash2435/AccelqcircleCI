@@ -10,7 +10,7 @@ jobs:
           agent-name: "POC_Agent"
           job-id: "346692"
           password: "my_accelq_pass"
-          project-name: "CustomFieldProject"
+          project-name: Custom Field Project
           tenant: "demo"
           url: "https://poc.accelq.io"
           user: "aut2@mailnesia.com"
