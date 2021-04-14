@@ -8,8 +8,8 @@ jobs:
     steps:
       - accelq-connect/accelq-ci:
           agent-name: "POC_Agent"
-          job-id: " 346692"
-          password: "Q2hhbmdlTWUx"
+          job-id: "346692"
+          password: "my_accelq_pass"
           project-name: "Custom Field Project"
           tenant: "demo"
           url: "https://poc.accelq.io"
